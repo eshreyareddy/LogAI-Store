@@ -1,0 +1,6 @@
+{
+    "compaction_count": 1,
+    "last_compaction_time": "Wed Apr 23 08:56:42 2025",
+    "memtable_size": 0,
+    "tombstone_count": 0
+}

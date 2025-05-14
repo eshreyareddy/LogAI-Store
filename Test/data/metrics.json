@@ -1,0 +1,30 @@
+[
+    {
+        "compaction_count": 0,
+        "memtable_size": 4,
+        "sstable_count": 0,
+        "timestamp": "Wed Apr 23 08:56:42 2025",
+        "tombstone_count": 1
+    },
+    {
+        "compaction_count": 0,
+        "memtable_size": 0,
+        "sstable_count": 1,
+        "timestamp": "Wed Apr 23 08:56:42 2025",
+        "tombstone_count": 0
+    },
+    {
+        "compaction_count": 1,
+        "memtable_size": 0,
+        "sstable_count": 1,
+        "timestamp": "Wed Apr 23 08:56:42 2025",
+        "tombstone_count": 0
+    },
+    {
+        "compaction_count": 1,
+        "memtable_size": 0,
+        "sstable_count": 1,
+        "timestamp": "Wed Apr 23 08:56:42 2025",
+        "tombstone_count": 0
+    }
+]

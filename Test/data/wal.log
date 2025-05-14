@@ -1,0 +1,61 @@
+PUT name shreya
+PUT language C++
+DEL name
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+PUT course systems
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+DEL name
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+DEL name
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+DEL name
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+DEL name
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+DEL name
+PUT name shreya
+PUT lang cpp
+PUT city sanjose
+DEL name
+PUT lang cpp
+PUT lang cpp
