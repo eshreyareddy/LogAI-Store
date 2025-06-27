@@ -1,97 +1,126 @@
-LogAI-Store
+# 📦 LogAI-Store
 
-Project Overview
+**LogAI-Store** is a machine learning–driven hybrid storage engine that combines the strengths of **LSM Trees** and **B-Trees**, designed for intelligent, real-time data ingestion and adaptive query optimization. Powered by predictive caching and workload-aware compaction strategies, LogAI-Store bridges the gap between high-throughput writes and low-latency reads.
 
-LogAI-Store is an advanced ML-driven hybrid storage engine combining B-Trees and LSM Trees with adaptive tuning based on workload analysis. It features real-time data ingestion, compaction, and intelligent data retrieval powered by machine learning. The project is structured into two main components:
+---
 
-logai-dashboard: A monitoring dashboard built with Next.js for real-time visualization of data ingestion, compaction stats, and performance metrics.
+## 🚀 Features
 
-logai-dashboard-ui: The frontend UI layer, designed with React and Next.js, providing intuitive interfaces for interacting with the storage engine.
+- ✅ Real-time data ingestion and live monitoring
+- 🌲 Hybrid **LSM Tree + B-Tree** architecture
+- 🔄 Advanced compaction & write optimization strategies
+- 🧠 Machine Learning–based predictive caching
+- 📈 Real-time visualization of metrics using **Recharts** & **D3.js**
+- 🧪 Insert/Delete operations powered via `commands.txt`
 
-Features
+---
 
-Real-time data ingestion and monitoring
+## 🧠 Architecture
 
-Hybrid LSM Tree and B-Tree architecture
+The project is split into two major components:
 
-Advanced compaction strategies
+| Component            | Description                                                  |
+|----------------------|--------------------------------------------------------------|
+| `logai-dashboard`    | Backend engine built with **FastAPI**, managing ingestion and compaction |
+| `logai-dashboard-ui` | Real-time monitoring dashboard built with **Next.js + React** |
 
-Predictive caching with machine learning
+---
 
-Real-time visualization of storage and query performance
-
-Directory Structure
+## 🗂️ Directory Structure
 
 logai-store/
-├── logai-dashboard          # Backend engine with FastAPI
-│   ├── main.py             # Main entry point for FastAPI
-│   ├── commands.txt        # Command inputs for database operations
-│   └── venv/               # Virtual environment (not pushed to GitHub)
-│
-├── logai-dashboard-ui      # Frontend dashboard with Next.js
-│   ├── app/                # Main application components
-│   ├── node_modules/       # Dependencies
-│   ├── public/             # Static assets
-│   └── pages/              # Next.js page components
-│
-└── Test                    # Testing scripts and unit tests
+├── logai-dashboard/ # Backend engine (FastAPI)
+│ ├── main.py # Entry point
+│ ├── commands.txt # File with DB commands (insert/delete)
+│ └── venv/ # Python virtual environment
+├── logai-dashboard-ui/ # Frontend UI (Next.js)
+│ ├── app/ # App logic & state
+│ ├── pages/ # Route components
+│ ├── public/ # Static assets
+│ └── node_modules/ # Dependencies
+└── Test/ # Unit & integration tests
 
-Setup Instructions
+yaml
+Copy
+Edit
 
-Clone the repository:
+---
 
+## ⚙️ Setup Instructions
+
+### 1️⃣ Clone the Repository
+
+```bash
 git clone https://github.com/eshreyareddy/logai-store.git
 cd logai-store
-
-Backend Setup (logai-dashboard):
-
+2️⃣ Backend Setup (logai-dashboard)
+bash
+Copy
+Edit
 cd logai-dashboard
+
+# Create & activate virtual environment
 python3 -m venv venv
-source venv/bin/activate   # For Linux/Mac
-.\venv\Scripts\activate  # For Windows
+
+# Activate (Linux/macOS):
+source venv/bin/activate
+
+# Activate (Windows):
+.\venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Start backend server
 python main.py
-
-Frontend Setup (logai-dashboard-ui):
-
+3️⃣ Frontend Setup (logai-dashboard-ui)
+bash
+Copy
+Edit
 cd ../logai-dashboard-ui
+
+# Install frontend dependencies
 npm install
+
+# Start development server
 npm run dev
+💻 Usage
+🖥️ UI Dashboard → http://localhost:3000
 
-Usage
+🧠 Backend API → http://localhost:8000
 
-Access the UI at http://localhost:3000
+⚙️ Interact using the commands.txt file to simulate insert/delete/query operations
 
-Backend runs on http://localhost:8000
+🧰 Tech Stack
+Layer	Technology
+Backend	Python, FastAPI
+Frontend	React, Next.js, Tailwind CSS
+Database	Hybrid LSM Trees & B-Trees
+ML Models	Scikit-learn, TensorFlow
+Charts	Recharts, D3.js
+Infra	Localhost (dev), Docker/K8s-ready (future)
 
-Use commands.txt for testing database operations
+🤝 Contributing
+Contributions are welcome and appreciated!
 
-Technologies Used
+📌 To contribute:
+bash
+Copy
+Edit
+# Step 1: Fork this repository
 
-Backend: FastAPI, Python
+# Step 2: Create your branch
+git checkout -b feature/your-feature
 
-Frontend: React, Next.js
+# Step 3: Commit your changes
+git commit -m "Add feature: your-feature"
 
-Database: LSM Trees, B-Trees
+# Step 4: Push your branch
+git push origin feature/your-feature
 
-Visualization: Recharts, D3.js
+# Step 5: Open a Pull Request 🚀
+Please follow the existing file structure and write clean, documented code.
 
-Machine Learning: Scikit-Learn, TensorFlow
+📝 License
+This project is licensed under the MIT License — see the LICENSE file for details.
 
-Contributing
-
-Contributions are welcome! Please follow the guidelines:
-
-Fork the repository
-
-Create a new branch (feature/your-feature)
-
-Commit your changes (git commit -m 'Add some feature')
-
-Push to the branch (git push origin feature/your-feature)
-
-Open a Pull Request
-
-License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
