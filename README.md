@@ -28,21 +28,19 @@ The project is split into two major components:
 
 ## 🗂️ Directory Structure
 
+```
 logai-store/
-├── logai-dashboard/ # Backend engine (FastAPI)
-│ ├── main.py # Entry point
-│ ├── commands.txt # File with DB commands (insert/delete)
-│ └── venv/ # Python virtual environment
-├── logai-dashboard-ui/ # Frontend UI (Next.js)
-│ ├── app/ # App logic & state
-│ ├── pages/ # Route components
-│ ├── public/ # Static assets
-│ └── node_modules/ # Dependencies
-└── Test/ # Unit & integration tests
-
-yaml
-Copy
-Edit
+├── logai-dashboard/          # Backend engine (FastAPI)
+│   ├── main.py               # Entry point
+│   ├── commands.txt          # File with DB commands (insert/delete)
+│   └── venv/                 # Python virtual environment
+├── logai-dashboard-ui/       # Frontend UI (Next.js)
+│   ├── app/                  # App logic & state
+│   ├── pages/                # Route components
+│   ├── public/               # Static assets
+│   └── node_modules/         # Dependencies
+└── Test/                     # Unit & integration tests
+```
 
 ---
 
@@ -53,10 +51,13 @@ Edit
 ```bash
 git clone https://github.com/eshreyareddy/logai-store.git
 cd logai-store
-2️⃣ Backend Setup (logai-dashboard)
-bash
-Copy
-Edit
+```
+
+---
+
+### 2️⃣ Backend Setup (`logai-dashboard`)
+
+```bash
 cd logai-dashboard
 
 # Create & activate virtual environment
@@ -73,10 +74,13 @@ pip install -r requirements.txt
 
 # Start backend server
 python main.py
-3️⃣ Frontend Setup (logai-dashboard-ui)
-bash
-Copy
-Edit
+```
+
+---
+
+### 3️⃣ Frontend Setup (`logai-dashboard-ui`)
+
+```bash
 cd ../logai-dashboard-ui
 
 # Install frontend dependencies
@@ -84,29 +88,38 @@ npm install
 
 # Start development server
 npm run dev
-💻 Usage
-🖥️ UI Dashboard → http://localhost:3000
+```
 
-🧠 Backend API → http://localhost:8000
+---
 
-⚙️ Interact using the commands.txt file to simulate insert/delete/query operations
+## 💻 Usage
 
-🧰 Tech Stack
-Layer	Technology
-Backend	Python, FastAPI
-Frontend	React, Next.js, Tailwind CSS
-Database	Hybrid LSM Trees & B-Trees
-ML Models	Scikit-learn, TensorFlow
-Charts	Recharts, D3.js
-Infra	Localhost (dev), Docker/K8s-ready (future)
+- 🖥️ UI Dashboard → http://localhost:3000  
+- 🧠 Backend API → http://localhost:8000  
+- ⚙️ Interact using the `commands.txt` file to simulate insert/delete/query operations
 
-🤝 Contributing
+---
+
+## 🧰 Tech Stack
+
+| Layer         | Technology                                   |
+|---------------|----------------------------------------------|
+| **Backend**   | Python, FastAPI                              |
+| **Frontend**  | React, Next.js, Tailwind CSS                 |
+| **Database**  | Hybrid LSM Trees & B-Trees                   |
+| **ML Models** | Scikit-learn, TensorFlow                     |
+| **Charts**    | Recharts, D3.js                              |
+| **Infra**     | Localhost (dev), Docker/K8s-ready (future)  |
+
+---
+
+## 🤝 Contributing
+
 Contributions are welcome and appreciated!
 
-📌 To contribute:
-bash
-Copy
-Edit
+### 📌 To contribute:
+
+```bash
 # Step 1: Fork this repository
 
 # Step 2: Create your branch
@@ -119,8 +132,13 @@ git commit -m "Add feature: your-feature"
 git push origin feature/your-feature
 
 # Step 5: Open a Pull Request 🚀
+```
+
 Please follow the existing file structure and write clean, documented code.
 
-📝 License
-This project is licensed under the MIT License — see the LICENSE file for details.
+---
+
+## 📝 License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
 
